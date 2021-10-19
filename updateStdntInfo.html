@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<script type="text/javascript">
+function getURL(stdntid,passwd)
+{
+	var xmlhttp;
+	if (window.XMLHttpRequest)
+	{
+		// code for IE7+, Firefox, Chrome, Opera, Safari
+		xmlhttp=new XMLHttpRequest();
+	}
+	else
+	{
+		// code for IE6, IE5
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+
+	xmlhttp.onreadystatechange=function()
+	{
+		if (xmlhttp.readyState==4 && xmlhttp.status==200)      
+		{
+			var result=xmlhttp.responseText;
+			var obj = JSON.parse(result);//解析json字串為json物件形式
+        window.location.replace(obj);
+		}
+
+	}
+
+	var url="https://script.google.com/macros/s/AKfycbx4opiiTjw8syesuB8G83XVKTl6ZXUZ8HOnDKtsnETvRE4aLykR-Fd2FBIVJRYFiNb6/exec";
+	xmlhttp.open("get",url+"?stdntid="+encodeURIComponent(stdntid)+"&passwd="+encodeURIComponent(passwd),true);
+	xmlhttp.send();
+}
+</script>
+</head>
+<body>
+
+<font size="4">
+<br><br>
+<pre>
+    學生編號: <input type="text" id="stdntid" />
+
+    密碼: <input type="text" id="passwd" />
+    
+    <input type="button" name="inq" value="查詢修改資料連結" onclick="getURL(stdntid.value,passwd.value);">
+</pre>
+
+</body>
+</html>
