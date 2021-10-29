@@ -8,79 +8,130 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>樂媽共學團</title>
+    <title>樂媽共學</title>
+    
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <div class="container-fluid m-0 p-0 d-flex flow-row w-100 vh-100 ">
-        <div class="flex-column p-0 text-white bg-dark" style="width: 200px;">
-            <hr>
-            <a href="/" class="m-0 p-0 align-items-center mb-1 mb-md-0 me-md-auto text-white text-decoration-none">
-                <div class="text-center ">
-                    <span class="fs-4">樂媽共學團</span>
-                </div>
-            </a>
-            <hr>
-            <div class="align-items-start  ">
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                        aria-selected="true">Home
-                    </button>
-                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+<div class="container-fluid m-0 p-0 d-flex flow-row vw-100 vh-100 ">
+    <div class="flex-column m-0 p-0 text-white bg-dark" style="width:150px;">
+        <hr>
+        <a href="index.html" class="m-0 p-0 align-items-center mb-1 mb-md-0 me-md-auto text-white text-decoration-none">
+            <div class="text-center ">
+                <span class="fw-bolder fs-4 text-warning">樂媽共學</span>
+            </div>
+        </a>
+        <hr>
+        <div class="align-items-start  ">
+            <div class="nav flex-column nav-pills me-0" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="text-sm-center nav-link" id="v-pills-note-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-note" type="button" role="tab" aria-controls="v-pills-note"
+                        aria-selected="true">
+                    共學團須知
+                </button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
                         aria-selected="false">
-                        註冊學生資料
-                    </button>
-                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false">更新學生資料
-                    </button>
-                    <!--
-                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
-                        aria-selected="false">報名課程範例
+                    註冊學生資料
                 </button>
-            -->
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid d-flex m-1 p-1  overflow-auto " style="position: relative;">
-            <div class="container-fluid m-0 p-0 text-black" style="position: relative;">
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active m-0" id="v-pills-home" role="tabpanel"
-                        aria-labelledby="v-pills-home-tab">
-                        <iframe class=" w-100 h-100" style="position: absolute;" src="home.html">
-                        </iframe>
-                    </div>
-                    <div class="tab-pane fade flex-fill flex-grow-1" id="v-pills-profile" role="tabpanel"
-                        aria-labelledby="v-pills-profile-tab">
-                        <iframe class="w-100 h-100" style="position: absolute;"
-                            src="https://docs.google.com/forms/d/e/1FAIpQLScXsLHDnuuGcs-WFw2ZPB8-P0DeEdp9RXJCREzMNL_4bbO5SQ/viewform?usp=sf_link">
-                        </iframe>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                        aria-labelledby="v-pills-messages-tab">
-                        <iframe class=" w-100 h-100" style="position: absolute;" src="updateStdntInfo.html">
-                        </iframe>
-                    </div>
-                    <!--
-                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                     aria-labelledby="v-pills-settings-tab">
-                    <iframe class="w-100 h-100" style="position: absolute;"
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSeqF3s5YLSHXvZGl8TKBNVpGD48QN2vz00SSoabeDlmsku3pw/viewform?usp=sf_link">
-                    </iframe>
-                </div>
-            -->
-                </div>
+                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false">
+                    查詢/更新學生資料
+                </button>
+                <button class="nav-link" id="v-pills-schedule-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-schedule" type="button" role="tab" aria-controls="v-pills-schedule"
+                        aria-selected="false">
+                    課程表
+                </button>
+                <button class="nav-link" id="v-pills-qa-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-qa" type="button" role="tab" aria-controls="v-pills-qa"
+                        aria-selected="false">
+                    共學團Q&A
+                </button>
+
+                <button class="nav-link" id="v-pills-feadback-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-feadback" type="button" role="tab" aria-controls="v-pills-feadback"
+                        aria-selected="false">
+                    家長心得回饋
+                </button>
+                <button class="nav-link" id="v-pills-vedio-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-vedio" type="button" role="tab" aria-controls="v-pills-vedio"
+                        aria-selected="false">
+                    上課影片
+                </button>
             </div>
         </div>
     </div>
+    <div class="container-fluid d-flex m-1 p-1  overflow-auto " style="position: relative;">
+        <div class="container-fluid m-0 p-0 text-black" style="position: relative;">
+            <div class="tab-content" id="v-pills-tabContent">
+
+                <div class="tab-pane fade  flex-fill flex-grow-1 show active p-0 m-0" id="v-pills-home" role="tabpanel"
+                     aria-labelledby="v-pills-home-tab">
+                    <iframe class=" w-100 h-100" style="position: absolute;" src=home.html>
+                    </iframe>
+                </div>
+
+                <div class="tab-pane fade flex-fill flex-grow-1 p-0 m-0" id="v-pills-note" role="tabpanel"
+                     aria-labelledby="v-pills-note-tab">
+                    <iframe class=" w-100 h-100" style="position: absolute;" 
+                    src="https://docs.google.com/document/d/e/2PACX-1vT5ED-QPvmKumQfU52URDihERovhnxUv3wIviuEDNwn49_c_-F67DkdqqJ8hiE7z5dmAquV3GIvA95X/pub?embedded=true">
+                    </iframe>
+                </div>
+
+                <div class="tab-pane fade flex-fill flex-grow-1 m-0 p-0" id="v-pills-profile" role="tabpanel"
+                     aria-labelledby="v-pills-profile-tab">
+                    <iframe class="w-100 h-100" style="position: absolute;"
+                            src="https://docs.google.com/forms/d/e/1FAIpQLScXsLHDnuuGcs-WFw2ZPB8-P0DeEdp9RXJCREzMNL_4bbO5SQ/viewform?usp=sf_link">
+                    </iframe>
+                </div>
+                <div class="tab-pane fade  flex-fill flex-grow-1 m-3 p-3" id="v-pills-messages" role="tabpanel"
+                     aria-labelledby="v-pills-messages-tab">
+                    <iframe class=" w-100 h-100" style="position: absolute;" src="updateStdntInfo.html">
+                    </iframe>
+                </div>
+                <div class="tab-pane fade flex-fill flex-grow-1 m-1 p-1" id="v-pills-schedule" role="tabpanel"
+                     aria-labelledby="v-pills-schedule-tab">
+                    <iframe class="w-100 h-100" style="position: absolute;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVt3Gd9KwYuzqVyXlow4EQMYC-CtGclTH4QvYHnSoGDqhqOcEX4i7NVf_hRcv9pVSC0OTwqLZGFfuF/pubhtml?widget=true&amp;headers=false">
+                    </iframe>
+                </div>
+                <div class="tab-pane fade flex-fill flex-grow-1 m-0 p-0" id="v-pills-qa" role="tabpanel"
+                     aria-labelledby="v-pills-qa-tab">
+                    <iframe class="w-100 h-100" style="position: absolute;" src="https://docs.google.com/document/d/e/2PACX-1vSmO80EoXHcxx3T9Ne37PzYZgrNyKxdikfldqlUO2Hw1AQWqSA0mez-TTIhCJ_Wx47g1NzF9twg8Wf5/pub?embedded=true">
+                    </iframe>
+                </div>
+                <div class="tab-pane fade flex-fill flex-grow-1 m-0 p-0" id="v-pills-feadback" role="tabpanel"
+                     aria-labelledby="v-pills-feadback-tab">
+                    <iframe class="w-100 h-100" style="position: absolute;" src="https://happymomchou.blogspot.com/">
+                    </iframe>
+                </div>
+                <div class="tab-pane fade flex-fill flex-grow-1 m-3 p-3" id="v-pills-vedio" role="tabpanel"
+                     aria-labelledby="v-pills-vedio-tab">
+<!--                     
+                     <BR><li><span class="fs-4"> Mr. Ashleigh - Oxofrd Book 1 </span></li><BR>
+                     <iframe src="https://drive.google.com/file/d/1ElRPZSh6Fc6LDMRMi1ArOesZBNw7MJOa/preview" width="640" height="480" allow="autoplay"></iframe>
+                     <BR><HR>
+-->
+                    <BR><li><span class="fs-4"> Miss Kendra </span></li><BR>
+                    <iframe src="https://drive.google.com/file/d/1zOFgvRfPLuACrjBhCOWcXgrpDTKJzIKv/preview" width="640" height="480" allow="autoplay"></iframe>
+                    <BR><HR>
+                    
+                    <BR><li><span class="fs-4"> Miss Hunter - 六大動物 </span></li><BR>
+                    <iframe src="https://drive.google.com/file/d/1NBEGgzp3uAvIjQq5gNjkawiHBlqoa1vm/preview" width="640" height="480" allow="autoplay"></iframe>
+                    <BR><HR>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 
