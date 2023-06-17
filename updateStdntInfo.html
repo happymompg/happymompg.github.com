@@ -30,8 +30,8 @@
 
             }
 
-            var url = "https://script.google.com/macros/s/AKfycbznGBpgWJ8t7r0Pahb4Ie1oA2EPfDTRwLnrpJHSqfyL0bub-yA1XJHsqRafIM9UI7CX/exec";
-            xmlhttp.open("get", url + "?stdntid=" + encodeURIComponent(stdntid) + "&passwd=" + encodeURIComponent(passwd), true);
+            var url = "https://script.google.com/macros/s/AKfycbyqHMCkNeKdR80TqzABV913Tp5_HdmrakoFjHhXOLZG3ygGbyqvnjfeMwZ_Thv7OHm6/exec";
+            xmlhttp.open("get", url + "?stdntid=" + encodeURIComponent(stdntid) + "&passwd=" + encodeURIComponent(passwd) + "&mode=1", true);
             xmlhttp.send();
         }
 
@@ -60,24 +60,6 @@
         }
     }
 
-    /*
-    function onload() {
-        alert("Page is loaded");
-        var btn1 = document.getElementById("btn1");
-        var pwd = document.getElementById("passwd")//$('input[type="text"]');
-        var sid = document.getElementById("stdntid")//$('input[type="text"]');
-
-        btn1.prop('disabled', true);
-        pwd.on('keyup', checkStatus);
-        sid.on('keyup', checkStatus);
-
-        function checkStatus() {
-            var status = ($.trim(pwd.val()) === '' || $.trim(sid.val()) === '');
-            btn1.prop('disabled', status);
-        }
-    };
-    window.onload = onload();
-     */
 </script>
 <div class="container-fluid">
 
