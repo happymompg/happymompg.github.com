@@ -23,7 +23,7 @@
 
             xmlhttp.onreadystatechange = function () {
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                    window.location.replace(xmlhttp.responseText);
+                    document.getElementById("query").innerHTML=xmlhttp.responseText;
                 }
 
             }
