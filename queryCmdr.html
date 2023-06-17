@@ -23,6 +23,7 @@
 
             xmlhttp.onreadystatechange = function () {
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    window.location.replace(xmlhttp.responseText);
                 }
 
             }
@@ -58,7 +59,7 @@
     }
 
 </script>
-<div class="container-fluid">
+<div id="query" class="container-fluid">
 
     <form>
         <div class="form-group mb-4">
