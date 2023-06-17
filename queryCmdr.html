@@ -28,7 +28,7 @@
 
             }
 
-            var url = "https://script.google.com/macros/s/AKfycbxYth8c3NeeZ3y9rW29J2RBZsjbGvtnMR6skZMLx20Myb5zccmgAyzFbzQm5WRIP1L5/exec";
+            var url = "https://script.google.com/macros/s/AKfycbxSeRJzrDv6nPj51f8sF1tbKIVdh05mpszVRTKk6SoAmvoikHf4TtgUhXYbD17bqeJ-/exec";
             xmlhttp.open("get", url + "?stdntid=" + encodeURIComponent(stdntid) + "&passwd=" + encodeURIComponent(passwd) + "&mode=0", true);
             xmlhttp.send();
         }
@@ -40,9 +40,6 @@
 
 <body>
 <H3>推薦入群名單查詢</H3>
-<BR>
-請以樂媽共學團學號密碼登入後，查詢推薦入群名單。
-<BR><BR>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -61,6 +58,10 @@
 </script>
 <div id="query" class="container-fluid">
 
+    <BR>
+        請以樂媽共學團學號密碼登入後，查詢推薦入群名單。
+    <BR><BR>
+        
     <form>
         <div class="form-group mb-4">
             <label for="stdntid">學生編號</label>
