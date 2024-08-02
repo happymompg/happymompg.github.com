@@ -70,21 +70,26 @@
                         aria-selected="false">
                     註冊學生帳號<br>(每月9、10日開放)
                 </button>
-            <br><hr>
-                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false">
-                    學生帳號資料維護
-                </button>
                 <button class="nav-link" id="v-pills-contract-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-contract" type="button" role="tab" aria-controls="v-pills-contract"
                         aria-selected="false">
                     公約同意書
                 </button>
+            <br><hr><hr>
+                <button class="nav-link" id="v-pills-accountupdate-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-accountupdate" type="button" role="tab" aria-controls="v-pills-accountupdate"
+                        aria-selected="false">
+                    學生帳號資料維護
+                </button>
                 <button class="nav-link" id="v-pills-recommander-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-recommander" type="button" role="tab" aria-controls="v-pills-recommander"
                         aria-selected="false">
                     推薦入群查詢
+                </button>
+                <button class="nav-link" id="v-pills-querypasswd-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-querypasswd" type="button" role="tab" aria-controls="v-pills-querypasswd"
+                        aria-selected="false">
+                    密碼查詢
                 </button>
             </div>
         </div>
@@ -163,8 +168,8 @@
 
         </div>
 
-                <div class="tab-pane fade  flex-fill flex-grow-1 m-3 p-3" id="v-pills-messages" role="tabpanel"
-                     aria-labelledby="v-pills-messages-tab">
+                <div class="tab-pane fade  flex-fill flex-grow-1 m-3 p-3" id="v-pills-accountupdate" role="tabpanel"
+                     aria-labelledby="v-pills-accountupdate-tab">
                     <iframe class=" w-100 h-100" style="position: absolute;" src="updateStdntInfo.html">
                     </iframe>
                 </div>
@@ -181,7 +186,13 @@
                     <iframe class=" w-100 h-100" style="position: absolute;" src="queryCmdr.html">
                     </iframe>
                 </div>
-                
+
+                <div class="tab-pane fade  flex-fill flex-grow-1 m-3 p-3" id="v-pills-querypasswd" role="tabpanel"
+                aria-labelledby="v-pills-querypasswd-tab">
+               <iframe class=" w-100 h-100" style="position: absolute;" src="queryPasswd.html">
+               </iframe>
+           </div>
+
             </div>
         </div>
     </div>
